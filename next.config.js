@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // Enable static exports
+  output: 'export',
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
-  // Ensure your static site can be deployed to any static hosting
+  basePath: '/aigirltrainerchatbot',
+  assetPrefix: '/aigirltrainerchatbot/',
   trailingSlash: true,
 }
 
