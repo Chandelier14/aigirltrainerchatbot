@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/aigirltrainerchatbot',
-  assetPrefix: '/aigirltrainerchatbot/',
+  basePath: process.env.NODE_ENV === 'production' ? '/aigirltrainerchatbot' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/aigirltrainerchatbot/' : '',
   trailingSlash: true,
 }
 
